@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Web Experience</h1>
+            <p class="subtitle">Combining CSS3 Animations with JavaScript Functions</p>
+        </header>
+        
+        <!-- Part 1: CSS Animations -->
+        <section id="part1">
+            <h2>🎨 Part 1: CSS3 Transitions and Animations</h2>
+            <p>Hover over buttons and observe the predefined animations below.</p>
+            
+            <div class="animation-demo">
+                <button class="btn btn-primary">Hover Me</button>
+                <button class="btn btn-secondary">Hover Me Too</button>
+            </div>
+            
+            <div class="animation-demo">
+                <div class="animation-box pulse">Pulse</div>
+                <div class="animation-box slide-in">Slide In</div>
+                <div class="animation-box bounce">Bounce</div>
+                <div class="animation-box rotate">Rotate</div>
+            </div>
+        </section>
+        
+        <!-- Part 2: JavaScript Functions -->
+        <section id="part2">
+            <h2>📚 Part 2: JavaScript Functions</h2>
+            <p>Demonstrating scope, parameters, and return values with reusable functions.</p>
+            
+            <div class="function-demo">
+                <div class="function-controls">
+                    <button id="calculateBtn" class="btn btn-primary">Calculate Area</button>
+                    <button id="formatTextBtn" class="btn btn-primary">Format Text</button>
+                    <button id="randomColorBtn" class="btn btn-primary">Random Color</button>
+                    <button id="counterBtn" class="btn btn-primary">Increment Counter</button>
+                </div>
+                
+                <div class="function-result" id="functionResult">
+                    Results will appear here...
+                </div>
+            </div>
+        </section>
+        
+        <!-- Part 3: Combined CSS & JS -->
+        <section id="part3">
+            <h2>🎨🎬 Part 3: Combining CSS Animations with JavaScript</h2>
+            <p>Using JavaScript to dynamically trigger CSS animations.</p>
+            
+            <div class="combined-demo">
+                <div class="card" id="card1">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Card 1</h3>
+                            <p>Click to flip</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Back Side</h3>
+                            <p>JavaScript triggered this flip!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card" id="card2">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Card 2</h3>
+                            <p>Click to flip</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Back Side</h3>
+                            <p>Another flipped card!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <button id="openModalBtn" class="btn btn-primary">Open Modal</button>
+                <button id="toggleLoadingBtn" class="btn btn-secondary">Toggle Loading</button>
+                <button id="animateBoxBtn" class="btn btn-primary">Animate Box</button>
+            </div>
+            
+            <div class="loading-bar">
+                <div class="loading-progress" id="loadingProgress"></div>
+            </div>
+            
+            <div class="animation-box" id="jsAnimatedBox">JS Controlled</div>
+        </section>
+        
+        <!-- Modal -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <button class="close-modal" id="closeModal">&times;</button>
+                <h2>Animated Modal</h2>
+                <p>This modal appears with a smooth slide and fade animation triggered by JavaScript!</p>
+                <p>Also, this website background gradient color was an inspiration from imagination</p>
+                <p>Click the close button or outside the modal to close it.</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>RoeTechhub Interactive Web Experience - Created with CSS3 & JavaScript</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
